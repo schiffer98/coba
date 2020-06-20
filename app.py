@@ -25,10 +25,10 @@ MODEL_PATH = 'Models/model_best.h5'
 model = load_model(MODEL_PATH)
 
 #TensorFlow 2.x.x
-#model._make_predict_function()          # Necessary to make everything ready to run on the GPU ahead of time
+model._make_predict_function()          # Necessary to make everything ready to run on the GPU ahead of time
 
 #Tensorflow 2.2.0
-model.make_predict_function()
+# model.make_predict_function()
 print('Model Succes Load..')
 
 
